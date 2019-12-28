@@ -1,0 +1,108 @@
+/* ---------------------------------------------------- NAVIGATION BAR ---------------------------------------------------- */
+/* navbar list */
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    border: solid rgb(201, 201, 201) .5px;
+
+  }
+
+  /* both home & tweet*/
+  li {
+    font-weight:bold;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 1px;
+    padding:0;
+    border:0;
+  }
+
+  .media-content .content {
+    display:block;
+  }
+
+  /* home button */
+  li:first-child {
+    float: left;
+    background-color: rgb(132, 199, 132);
+
+  }
+
+  /* new tweet button */
+  li:last-child {
+    float: right;
+    background: pink;
+  }
+  
+  /* navbar text */
+  li a {
+    display: block;
+    color: rgb(44, 44, 44);
+    text-align: center;
+    padding: 14px 16px;
+  }
+  
+  /* changes tweet to color when hovered over (but not home) */
+  li a:hover:not(.active) {
+    border-radius: 10px;
+    background-color:  rgb(132, 199, 132);
+  }
+
+  /* ---------------------------------------------------- NEWSFEED ---------------------------------------------------- */
+
+  #newsfeed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #ece6f0;
+  }
+
+  .media-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #name {
+    font-weight:bold;
+  }
+
+  time {
+    color: gray;
+  }
+
+  .card {
+    background-color:pink;
+    margin: 10px;
+    width:50%;
+  }
+
+  .level-item {
+    padding: 6px;
+    color: rgb(108, 163, 108);
+
+  }
+
+  #edit > * {
+    pointer-events: none;
+  }
+
+  #like > * {
+    pointer-events: none;
+  }
+
+  #retweet > * {
+    pointer-events: none;
+  }
+  
+  #reply > * {
+    pointer-events: none;
+  }
+
+
+ 

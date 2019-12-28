@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Twitter</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="node_modules/bulma/css/bulma.css">
+</head>
+
+<body>
+    <div id="root">
+        <div #navbar style="position:absolute; top: 0">
+            <ul>
+                <li>
+                    <a class="active" href=" ">Home</a>
+                </li>
+                <li id="newTweet">
+                    <a href="#newtweet">Tweet</a>
+                </li>
+            </ul>
+        </div>
+        <div id="newsfeed" style="position:relative; top:3px; margin-top: 7vh; overflow-y:hidden">
+        </div>
+    </div>
+
+    <!-- links to jQuery, axios, JS file-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="render.js" type="module"></script>
+</body>
